@@ -1,3 +1,5 @@
+package ba.unsa.etf.rpr.tutorijal4;
+
 public class Semestar
 {
     private Integer broj_semsetra;
@@ -10,7 +12,7 @@ public class Semestar
 
     }
 
-    public Semestar(Integer br_sem, Predemt[] obavezni, Predmet [] izborni, String ime_faksa)
+    public Semestar(Integer br_sem, Predmet[] obavezni, Predmet [] izborni, String ime_faksa)
     {
 
     }
