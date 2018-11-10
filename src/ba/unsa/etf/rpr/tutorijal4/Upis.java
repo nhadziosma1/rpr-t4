@@ -5,12 +5,13 @@ public class Upis
 {
     private Student st;
     private Predmet pr;
-    private PlanStudija planStud;
+    private PlanStudija plStu;
 
-    public Upis()
+    public Upis(Student st, Predmet pr, PlanStudija pl_stu)
     {
-        st = new Student();
-        pr = new Predmet();
-        planStud = new PlanStudija();
+        st = new Student(st);
+        pr = new Predmet(pr);
+        plStu = new PlanStudija(pl_stu);
     }
+
 }

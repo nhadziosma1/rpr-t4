@@ -6,28 +6,26 @@ public class Predmet
     private Integer ECTS_bodova;
     private boolean obavezan;
 
-    public Predmet()
-    {
-
-    }
-
-    public Predmet(String ime, Integer ects, String [] na_fakultetima, Integer [] na_semestrima)
-    {
-
-    }
-
     public String getIme() {
         return ime;
     }
-
     public Integer getECTS_bodova() {
         return ECTS_bodova;
     }
+    public boolean isObavezan() { return obavezan; }
 
-    public void IspisiSvePredmete()
+    public Predmet(String ime, Integer ects, boolean obavezan)
     {
+        this.ime=ime;
+        ECTS_bodova=ects;
+        this.obavezan=obavezan;
 
     }
 
-
+    public Predmet(Predmet pr)
+    {
+        ime=pr.ime;
+        ECTS_bodova= pr.ECTS_bodova;
+        obavezan=pr.obavezan;
+    }
 }
